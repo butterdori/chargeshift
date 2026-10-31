@@ -4,11 +4,11 @@ Charge-limit scheduling for Framework laptops on Linux, built with GTK 4 and lib
 
 ## Preview
 
-![Overview](img/preview1.png)
-
-![Schedule](img/preview2.png)
-
-![System](img/preview3.png)
+<p align="center">
+  <img src="img/preview1.png" alt="Overview" width="30%">
+  <img src="img/preview2.png" alt="Schedule" width="30%">
+  <img src="img/preview3.png" alt="System" width="30%">
+</p>
 
 ## Features
 
