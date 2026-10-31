@@ -1,6 +1,6 @@
 # Charge Shift
 
-Charge-limit scheduling for Framework laptops on Linux, built with GTK 4 and libadwaita.
+Charge-limit scheduling for Framework laptops on Linux, built with GTK 4 and libadwaita. Tested with Framework 13 Pro Intel.
 
 ## Preview
 
