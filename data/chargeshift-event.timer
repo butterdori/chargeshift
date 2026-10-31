@@ -1,0 +1,14 @@
+[Unit]
+Description=Charge Shift scheduled changes and override expiry
+PartOf=chargeshift.service
+After=chargeshift.service
+
+[Timer]
+OnCalendar=*-*-* 17:00:00
+OnClockChange=true
+OnTimezoneChange=true
+Persistent=true
+WakeSystem=true
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=chargeshift-event.service

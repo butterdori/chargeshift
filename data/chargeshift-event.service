@@ -1,0 +1,13 @@
+[Unit]
+Description=Reconcile the current Charge Shift target
+Requisite=chargeshift.service
+After=chargeshift.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/chargeshiftctl reconcile
+TimeoutStartSec=75
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+RestrictAddressFamilies=AF_UNIX

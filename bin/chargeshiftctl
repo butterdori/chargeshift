@@ -1,0 +1,5 @@
+#!/usr/bin/python3 -I
+import sys
+sys.path.insert(0, "/usr/lib/chargeshift")
+from chargeshift.cli import main
+raise SystemExit(main())

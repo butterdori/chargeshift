@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Charge Shift</title>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#62a0ea"/><stop offset="1" stop-color="#1a5fb4"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#8ff0a4"/><stop offset="1" stop-color="#26a269"/>
+    </linearGradient>
+  </defs>
+  <rect x="23" y="21" width="76" height="98" rx="20" fill="#0b3059"/>
+  <rect x="44" y="6" width="34" height="18" rx="7" fill="#1a5fb4"/>
+  <rect x="44" y="6" width="34" height="12" rx="6" fill="#99c1f1"/>
+  <rect x="23" y="17" width="76" height="98" rx="20" fill="url(#shell)"/>
+  <rect x="32" y="26" width="58" height="79" rx="12" fill="#124d91"/>
+  <rect x="35" y="29" width="52" height="73" rx="10" fill="url(#cell)"/>
+  <path d="M66 36 45 66h15l-6 27 26-36H64z" fill="#1b6e48" opacity=".28" transform="translate(0 2)"/>
+  <path d="M66 36 45 66h15l-6 27 26-36H64z" fill="#fff"/>
+  <circle cx="95" cy="94" r="26" fill="#0b3059"/>
+  <circle cx="95" cy="91" r="26" fill="#1a5fb4"/>
+  <circle cx="95" cy="91" r="21" fill="#fff"/>
+  <path d="M95 77v15l10 6" fill="none" stroke="#1a5fb4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="95" cy="91" r="3" fill="#1a5fb4"/>
+</svg>

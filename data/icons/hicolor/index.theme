@@ -1,0 +1,19 @@
+[Icon Theme]
+Name=Hicolor
+Comment=Charge Shift source-tree icons
+Hidden=true
+Directories=scalable/apps,symbolic/apps
+
+[scalable/apps]
+Size=128
+MinSize=16
+MaxSize=512
+Type=Scalable
+Context=Applications
+
+[symbolic/apps]
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
+Context=Applications

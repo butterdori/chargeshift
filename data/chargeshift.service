@@ -1,0 +1,29 @@
+[Unit]
+Description=Charge Shift Framework charging scheduler
+After=dbus.service systemd-logind.service systemd-tmpfiles-setup.service
+Wants=systemd-logind.service
+
+[Service]
+Type=dbus
+BusName=io.github.chargeshift.ChargeShift
+ExecStart=/usr/lib/chargeshift/chargeshiftd
+ExecStop=-/usr/bin/chargeshiftctl restore-base
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=45
+StateDirectory=chargeshift
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectControlGroups=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_UNIX
+ReadWritePaths=/run/systemd/system/chargeshift-event.timer.d
+CapabilityBoundingSet=CAP_SYS_RAWIO CAP_DAC_OVERRIDE CAP_DAC_READ_SEARCH
+
+[Install]
+WantedBy=multi-user.target

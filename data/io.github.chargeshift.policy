@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Charge Shift</vendor>
+  <action id="io.github.chargeshift.manage">
+    <description>Manage the Framework charging schedule</description>
+    <message>Authentication is required to change charging management, the schedule, or an override.</message>
+    <icon_name>io.github.chargeshift.ChargeShift</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

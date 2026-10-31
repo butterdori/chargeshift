@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Charge Shift
+Comment=Schedule Framework charge limits and temporary overrides
+Exec=chargeshift
+Icon=io.github.chargeshift.ChargeShift
+Terminal=false
+Categories=GNOME;GTK;Settings;HardwareSettings;
+Keywords=Framework;Battery;Charging;Schedule;
+StartupNotify=true

@@ -1,0 +1,23 @@
+post_install() {
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/chargeshift.conf
+  systemctl daemon-reload
+  printf '\nEnable Charge Shift with: sudo systemctl enable --now chargeshift.service\n\n'
+}
+
+post_upgrade() {
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/chargeshift.conf
+  systemctl daemon-reload
+  if systemctl is-active --quiet chargeshift.service; then
+    systemctl restart chargeshift.service
+  fi
+}
+
+pre_remove() {
+  systemctl disable --now chargeshift.service || true
+  systemctl stop chargeshift-event.timer chargeshift-event.service || true
+  rm -f /run/systemd/system/chargeshift-event.timer.d/schedule.conf
+}
+
+post_remove() {
+  systemctl daemon-reload
+}
