@@ -40,7 +40,7 @@ sudo systemctl enable --now chargeshift.service
 
 ### Debian 14+ / Ubuntu 26.04+
 
-[Download the latest `.deb`](../../releases/latest)
+Download the latest [`.deb`](../../releases/latest)  
 
 ## Usage
 
